@@ -15,8 +15,8 @@ body {
 }
 
 .clock {
-    height: 55vh;
-    width: 55vh;
+    width: min(50%, 25rem);
+    aspect-ratio: 1;
     border: 20px solid white;
     border-radius: 50%;
     padding: 2rem;
