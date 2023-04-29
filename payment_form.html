@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+  </head>
+  <body bgcolor="yellow">
+    <center>
+      <form action="#">
+        <h4>Required Fields are marked as *</h4>
+        <fieldset>
+          <legend><h2>Personal Information</h2></legend>
+          <p>
+            First Name:*
+            <input
+              type="text"
+              name="fname"
+              placeholder="First Name Here"
+              required
+            />
+          </p>
+          <p>
+            Last Name:*
+            <input
+              type="text"
+              name="lname"
+              placeholder="Last Name Here"
+              required
+            />
+          </p>
+          <p>
+            Gender:* <br />
+            <input type="radio" name="gender" id="gender" required />Male
+            <input type="radio" name="gender" id="gender" required />Female
+            <input type="radio" name="gender" id="gender" required />Other
+          </p>
+          <p>
+            Email-id:*
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@gmail.com"
+              required
+            />
+          </p>
+          <p>
+            Address:
+            <textarea
+              name="address"
+              id="address"
+              cols="50"
+              rows="5"
+              placeholder="Permanent Address"
+            ></textarea>
+          </p>
+          <p>
+            Country:* <input type="text" name="country" id="country" required />
+          </p>
+          <p>State:* <input type="text" name="state" id="state" required /></p>
+          <p>City:* <input type="text" name="city" id="city" required /></p>
+          <p>
+            Pincode:*
+            <input type="number" name="pincode" id="pincode" required />
+          </p>
+          <p>
+            Mobile Number:*
+            <input
+              type="number"
+              name="mobile"
+              id="mobile"
+              placeholder="(+91)"
+              required
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend><h2>Payment Information</h2></legend>
+          <p>
+            Card Type:*
+            <select name="card_type" id="card_type" required>
+              <option value="">-Select the card type-</option>
+              <option value="rupay">Rupay Card</option>
+              <option value="visa">Visa Card</option>
+              <option value="mastercard">Master Card</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <p>
+            Card Number:*
+            <input
+              type="number"
+              name="card_no"
+              id="card_no"
+              placeholder="****-****-****-****"
+              required
+            />
+          </p>
+          <p>
+            Expiry Date:*
+            <input
+              type="text"
+              name="exp_date"
+              id="exp_date"
+              placeholder="YYYY/MM"
+              required
+            />
+          </p>
+          <p>
+            Username:*
+            <input
+              type="text"
+              name="uname"
+              id="uname"
+              placeholder="As on card"
+              required
+            />
+          </p>
+          <p>CVV:* <input type="password" name="cvv" id="cvv" required /></p>
+          <p align="center"><input type="submit" value="PAY NOW" /></p>
+        </fieldset>
+      </form>
+    </center>
+  </body>
+</html>
